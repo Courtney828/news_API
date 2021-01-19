@@ -14,6 +14,6 @@ export class NewsfeedService {
 
   constructor(private http:HttpClient ) { }
   getNews(url){
-    return this.http.get( `${API_URL} / ${url} &apiKeys=${API_Key} ` )
+    return this.http.get(`${API_URL}/${url}&apiKey=${API_Key}`)
   }
 }

@@ -15,7 +15,7 @@ this.loadNews()
 }
 
   loadNews(){
-    this.newsService.getNews('top-headlines?country=us ').subscribe(news=> {
+    this.newsService.getNews('top-headlines?country=us').subscribe(news=> {
       this.articles=news['articles'];
       console.log(this.articles);
 
